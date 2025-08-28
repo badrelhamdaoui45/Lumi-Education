@@ -75,11 +75,10 @@ export default function AboutPage() {
           </div>
           <div className="relative h-96 overflow-hidden rounded-lg shadow-2xl lg:h-[500px]">
             <Image
-              src="https://picsum.photos/800/600"
+              src="/4.jpg"
               alt="Children in a classroom in Malawi"
               fill
               className="object-cover"
-              data-ai-hint="happy children classroom"
             />
           </div>
         </div>
