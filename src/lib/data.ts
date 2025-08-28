@@ -116,11 +116,10 @@ export const aboutData = {
 };
 
 export const trustees = [
-  { name: 'Dr. Eleanor Vance', role: 'Chairperson & Founder' },
-  { name: 'Mr. Benjamin Carter', role: 'Treasurer' },
-  { name: 'Ms. Sophia Rodriguez', role: 'Secretary' },
-  { name: 'Mr. David Chen', role: 'Education Lead' },
-  { name: 'Mrs. Aisha Khan', role: 'Community Outreach Coordinator' },
+  { name: 'Teele Dunkley', role: 'Trustee' },
+  { name: 'Radek Vik', role: 'Trustee' },
+  { name: 'Clanford Chirwa', role: 'Trustee' },
+  { name: 'Michaela Pavlovicova', role: 'Trustee' },
 ];
 
 export const contactInfo = {
