@@ -28,6 +28,13 @@ export default function AboutPage() {
     },
   ];
 
+  const galleryImages = [
+    { src: '/1.jpg', alt: 'Children learning in a classroom', hint: 'happy children classroom' },
+    { src: '/2.jpg', alt: 'People at a charity gala', hint: 'charity event' },
+    { src: '/3.jpg', alt: 'Participants in a fun run', hint: 'people running' },
+    { src: '/5.jpg', alt: 'Display of baked goods at a sale', hint: 'baked goods' },
+  ];
+
   return (
     <div className="bg-background">
       <section className="bg-accent/20 py-20 md:py-32">
@@ -79,7 +86,32 @@ export default function AboutPage() {
               alt="Children in a classroom in Malawi"
               fill
               className="object-cover"
+              data-ai-hint="children classroom"
             />
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20 md:py-28">
+        <div className="container mx-auto px-6">
+          <div className="mb-12 text-center">
+            <h2 className="text-3xl font-headline font-bold text-foreground md:text-5xl">Our Journey in Pictures</h2>
+            <p className="mx-auto mt-4 max-w-2xl text-lg text-foreground/70">
+              A glimpse into the lives we&apos;re changing together.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
+            {galleryImages.map((image) => (
+              <div key={image.src} className="relative h-64 overflow-hidden rounded-lg shadow-lg">
+                <Image
+                  src={image.src}
+                  alt={image.alt}
+                  fill
+                  className="object-cover transition-transform duration-300 hover:scale-105"
+                  data-ai-hint={image.hint}
+                />
+              </div>
+            ))}
           </div>
         </div>
       </section>
