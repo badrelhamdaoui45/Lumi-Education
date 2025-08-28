@@ -70,7 +70,7 @@ export const events = [
     location: 'The Grand Ballroom, Norwich',
     description: 'Join us for an evening of fine dining, auctions, and entertainment to support our cause.',
     image: {
-      src: 'https://picsum.photos/seed/gala/400/250',
+      src: '/2.jpg',
       hint: 'charity event',
     },
   },
@@ -81,7 +81,7 @@ export const events = [
     location: 'City Park, Reepham',
     description: 'Run, walk, or jog to raise funds for school supplies. A family-friendly event for all ages.',
     image: {
-      src: 'https://picsum.photos/seed/funrun/400/250',
+      src: '/3.jpg',
       hint: 'people running',
     },
   },
@@ -92,7 +92,7 @@ export const events = [
     location: 'Reepham Market Square',
     description: 'Enjoy delicious homemade treats. All proceeds go directly to our projects in Malawi.',
     image: {
-      src: 'https://picsum.photos/seed/bakesale/400/250',
+      src: '/5.jpg',
       hint: 'baked goods',
     },
   },

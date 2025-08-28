@@ -7,7 +7,7 @@ export function MissionSection() {
     <section className="relative h-[60vh] md:h-[80vh] flex items-center justify-center text-center text-white">
       <div className="absolute inset-0">
         <Image
-          src="https://picsum.photos/1200/800"
+          src="/1.jpg"
           alt="Children learning in a classroom"
           fill
           className="object-cover"
