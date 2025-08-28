@@ -14,6 +14,9 @@ export function Header() {
           <Link href="/about" className="text-sm font-medium transition-colors hover:text-primary">
             About Us
           </Link>
+          <Link href="/get-involved" className="text-sm font-medium transition-colors hover:text-primary">
+            Get Involved
+          </Link>
         </nav>
         <Button asChild>
           <a href="https://www.crowdfunder.co.uk/p/lumi-education" target="_blank" rel="noopener noreferrer">
