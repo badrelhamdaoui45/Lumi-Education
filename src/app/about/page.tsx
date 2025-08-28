@@ -80,8 +80,6 @@ export default function AboutPage() {
               fill
               className="object-cover"
               data-ai-hint="happy children classroom"
-              width={800}
-              height={600}
             />
           </div>
         </div>
