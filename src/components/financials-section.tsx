@@ -10,6 +10,14 @@ export function FinancialsSection() {
     value: {
       label: 'Amount (£)',
     },
+    income: {
+      label: 'Income',
+      color: 'hsl(var(--chart-1))',
+    },
+    expenditure: {
+      label: 'Expenditure',
+      color: 'hsl(var(--chart-2))',
+    },
   };
 
   return (
@@ -36,8 +44,11 @@ export function FinancialsSection() {
                     <CartesianGrid strokeDasharray="3 3" horizontal={false} />
                     <XAxis type="number" dataKey="value" hide />
                     <YAxis type="category" dataKey="name" tickLine={false} axisLine={false} width={100} />
-                    <Tooltip cursor={{ fill: 'hsl(var(--accent))' }} content={<ChartTooltipContent indicator="dot" />} />
-                    <Bar dataKey="value" radius={5} />
+                    <Tooltip
+                      cursor={{ fill: 'hsl(var(--accent))' }}
+                      content={<ChartTooltipContent indicator="dot" />}
+                    />
+                    <Bar dataKey="value" radius={5} fill="var(--color-income)" />
                   </BarChart>
                 </ResponsiveContainer>
               </ChartContainer>
@@ -57,8 +68,11 @@ export function FinancialsSection() {
                     <CartesianGrid strokeDasharray="3 3" horizontal={false} />
                     <XAxis type="number" dataKey="value" hide />
                     <YAxis type="category" dataKey="name" tickLine={false} axisLine={false} width={130} />
-                    <Tooltip cursor={{ fill: 'hsl(var(--accent))' }} content={<ChartTooltipContent indicator="dot" />} />
-                    <Bar dataKey="value" radius={5} />
+                    <Tooltip
+                      cursor={{ fill: 'hsl(var(--accent))' }}
+                      content={<ChartTooltipContent indicator="dot" />}
+                    />
+                    <Bar dataKey="value" radius={5} fill="var(--color-expenditure)" />
                   </BarChart>
                 </ResponsiveContainer>
               </ChartContainer>
