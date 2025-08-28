@@ -1,33 +1,24 @@
 import { missionData } from '@/lib/data';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import Image from 'next/image';
 
 export function MissionSection() {
   return (
-    <section className="bg-accent/20 py-20 md:py-32">
-      <div className="container mx-auto px-6 text-center">
-        <h1 className="mb-6 text-4xl font-headline font-bold text-primary md:text-6xl">
-          {missionData.title}
-        </h1>
-        <p className="mx-auto mb-12 max-w-3xl text-lg text-foreground/80 md:text-xl">
-          {missionData.statement}
-        </p>
-        <div className="mx-auto mb-12 grid max-w-5xl grid-cols-1 gap-8 md:grid-cols-3">
-          {missionData.values.map((value) => (
-            <Card
-              key={value.title}
-              className="bg-background/80 text-left shadow-lg backdrop-blur-sm transition-shadow duration-300 hover:shadow-xl"
-            >
-              <CardHeader className="flex flex-row items-center gap-4">
-                <value.icon className="h-8 w-8 text-primary" />
-                <CardTitle className="font-headline text-2xl">{value.title}</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-foreground/70">{value.description}</p>
-              </CardContent>
-            </Card>
-          ))}
-        </div>
-        <p className="mx-auto max-w-3xl text-base text-foreground/80 md:text-lg">{missionData.goals}</p>
+    <section className="relative h-[60vh] md:h-[80vh] flex items-center justify-center text-center text-white">
+      <div className="absolute inset-0">
+        <Image
+          src="https://picsum.photos/1200/800"
+          alt="Children learning in a classroom"
+          fill
+          className="object-cover"
+          data-ai-hint="happy children classroom"
+          priority
+        />
+        <div className="absolute inset-0 bg-black/50" />
+      </div>
+      <div className="relative z-10 container mx-auto px-6">
+        <h1 className="mb-6 text-4xl font-headline font-bold text-white md:text-7xl">{missionData.title}</h1>
+        <p className="mx-auto max-w-3xl text-lg text-white/90 md:text-xl">{missionData.statement}</p>
       </div>
     </section>
   );

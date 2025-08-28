@@ -69,6 +69,10 @@ export const events = [
     title: 'Annual Charity Gala',
     location: 'The Grand Ballroom, Norwich',
     description: 'Join us for an evening of fine dining, auctions, and entertainment to support our cause.',
+    image: {
+      src: 'https://picsum.photos/seed/gala/400/250',
+      hint: 'charity event',
+    },
   },
   {
     date: '2024-10-22',
@@ -76,6 +80,10 @@ export const events = [
     title: 'Lumi Fun Run 5K',
     location: 'City Park, Reepham',
     description: 'Run, walk, or jog to raise funds for school supplies. A family-friendly event for all ages.',
+    image: {
+      src: 'https://picsum.photos/seed/funrun/400/250',
+      hint: 'people running',
+    },
   },
   {
     date: '2024-11-10',
@@ -83,6 +91,10 @@ export const events = [
     title: 'Community Bake Sale',
     location: 'Reepham Market Square',
     description: 'Enjoy delicious homemade treats. All proceeds go directly to our projects in Malawi.',
+    image: {
+      src: 'https://picsum.photos/seed/bakesale/400/250',
+      hint: 'baked goods',
+    },
   },
 ];
 
