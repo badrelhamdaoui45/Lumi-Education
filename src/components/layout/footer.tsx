@@ -37,6 +37,17 @@ export function Footer() {
                   {contactInfo.website}
                 </a>
               </p>
+              <p>
+                <strong>Charity Commission:</strong>{' '}
+                <a
+                  href="https://register-of-charities.charitycommission.gov.uk/en/charity-search/-/charity-details/5166160/charity-overview?_uk_gov_ccew_onereg_charitydetails_web_portlet_CharityDetailsPortlet_organisationNumber=5166160"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:underline"
+                >
+                  View Registration
+                </a>
+              </p>
             </address>
           </div>
 
