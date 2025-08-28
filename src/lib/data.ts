@@ -93,6 +93,14 @@ export const aboutData = {
     'Our motivation is simple: the belief that education is a fundamental human right and the most powerful tool for change. We are driven by the smiles of the children we help, the gratitude of the communities we serve, and the potential that is unlocked through learning. Every book we provide, every classroom we build, is a step towards a more equitable world.',
   futurePlans:
     'Looking ahead, Lumi Education aims to expand our reach. Our immediate goal is to add two new classrooms and a library to our existing school. In the next five years, we plan to replicate our model in a neighboring district, doubling our impact. We are also exploring vocational training programs for older students to equip them with practical skills for their future.',
+  whatWeDo:
+    'We believe education transforms lives. Lumi Education provides training, supports children and young people with disabilities, and works to break the cycle of poverty through opportunities to learn.',
+  whoWeHelp:
+    'Our focus is on children and young people in Malawi. Many face barriers such as disability, lack of facilities, or poverty. We work so every child has the chance to grow through learning.',
+  howWeHelp:
+    'We build and improve schools, libraries, and safe learning spaces. We provide resources, training, and support for both students and teachers. We also advise families and communities, raising awareness of the value of education.',
+  whereWeWork:
+    'Our projects are based in Malawi, Africa. We partner closely with local communities to ensure every project meets genuine needs and has a lasting impact.',
 };
 
 export const trustees = [

@@ -1,8 +1,33 @@
 import { aboutData } from '@/lib/data';
 import { TrusteesSection } from '@/components/trustees-section';
 import Image from 'next/image';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Heart, Target, Building, Globe } from 'lucide-react';
 
 export default function AboutPage() {
+  const sections = [
+    {
+      icon: Heart,
+      title: 'What we do',
+      content: aboutData.whatWeDo,
+    },
+    {
+      icon: Target,
+      title: 'Who we help',
+      content: aboutData.whoWeHelp,
+    },
+    {
+      icon: Building,
+      title: 'How we help',
+      content: aboutData.howWeHelp,
+    },
+    {
+      icon: Globe,
+      title: 'Where we work',
+      content: aboutData.whereWeWork,
+    },
+  ];
+
   return (
     <div className="bg-background">
       <section className="bg-accent/20 py-20 md:py-32">
@@ -15,6 +40,24 @@ export default function AboutPage() {
       </section>
 
       <section className="py-20 md:py-28">
+        <div className="container mx-auto px-6">
+          <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-4">
+            {sections.map((section) => (
+              <Card key={section.title} className="bg-background/80 text-left shadow-lg backdrop-blur-sm transition-shadow duration-300 hover:shadow-xl">
+                <CardHeader className="flex flex-row items-center gap-4">
+                  <section.icon className="h-8 w-8 text-primary" />
+                  <CardTitle className="font-headline text-2xl">{section.title}</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-foreground/70">{section.content}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20 md:py-28 bg-secondary/20">
         <div className="container mx-auto grid grid-cols-1 items-center gap-16 px-6 lg:grid-cols-2">
           <div className="space-y-8">
             <div>
