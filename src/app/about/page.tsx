@@ -2,7 +2,8 @@ import { aboutData } from '@/lib/data';
 import { TrusteesSection } from '@/components/trustees-section';
 import Image from 'next/image';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Heart, Target, Building, Globe } from 'lucide-react';
+import { Heart, Target, Building, Globe, CheckCircle } from 'lucide-react';
+import { Button } from '@/components/ui/button';
 
 export default function AboutPage() {
   const sections = [
@@ -75,10 +76,6 @@ export default function AboutPage() {
               <h2 className="mb-4 text-3xl font-headline font-bold">Our Motivation</h2>
               <p className="leading-relaxed text-foreground/80">{aboutData.motivations}</p>
             </div>
-            <div>
-              <h2 className="mb-4 text-3xl font-headline font-bold">Future Plans</h2>
-              <p className="leading-relaxed text-foreground/80">{aboutData.futurePlans}</p>
-            </div>
           </div>
           <div className="relative h-96 overflow-hidden rounded-lg shadow-2xl lg:h-[500px]">
             <Image
@@ -89,6 +86,41 @@ export default function AboutPage() {
               data-ai-hint="children classroom"
             />
           </div>
+        </div>
+      </section>
+
+      <section className="py-20 md:py-28">
+        <div className="container mx-auto px-6">
+          <div className="mb-12 text-center">
+            <h2 className="text-3xl font-headline font-bold text-foreground md:text-5xl">Our Future Plans</h2>
+            <p className="mx-auto mt-4 max-w-3xl text-lg text-foreground/70">
+              We have an ambitious vision to create a sustainable and empowering educational environment. Here's what we plan to do:
+            </p>
+          </div>
+          <div className="mx-auto max-w-4xl space-y-4">
+            {aboutData.futurePlans.map((plan, index) => (
+              <Card key={index} className="bg-background/80 backdrop-blur-sm">
+                <CardContent className="flex items-start gap-4 p-6">
+                  <CheckCircle className="mt-1 h-6 w-6 flex-shrink-0 text-primary" />
+                  <p className="text-foreground/80">{plan}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-accent/20 py-20 md:py-28">
+        <div className="container mx-auto px-6 text-center">
+          <h2 className="mb-4 text-3xl font-headline font-bold text-foreground md:text-5xl">How Your Contribution Helps</h2>
+          <p className="mx-auto max-w-3xl text-lg text-foreground/70">
+            {aboutData.contributionHelp}
+          </p>
+          <Button size="lg" className="mt-8" asChild>
+            <a href="https://www.crowdfunder.co.uk/p/lumi-education" target="_blank" rel="noopener noreferrer">
+              Donate to Our Project
+            </a>
+          </Button>
         </div>
       </section>
 

@@ -1,9 +1,9 @@
 import { BookOpen, HeartHandshake, HelpingHand } from 'lucide-react';
 
 export const missionData = {
-  title: 'Our Mission: Bringing Light to Learning',
+  title: 'Our Mission: Empowering Girls in Malawi',
   statement:
-    'Lumi Education is dedicated to providing quality education to underprivileged children in Malawi. We believe every child deserves the chance to learn, grow, and build a brighter future.',
+    'Lumi Education strives for the advancement of education for girls and young women in Malawi. We are building a boarding secondary school with a nursery to offer a formal education to young girls and women, including teenage mothers, to help to relieve the pregnancy-related drop out from education.',
   values: [
     {
       icon: BookOpen,
@@ -22,7 +22,7 @@ export const missionData = {
     },
   ],
   goals:
-    'Our current project focuses on building and supporting a school and nursery in a rural Malawian community, providing a safe and nurturing space for over 200 children.',
+    'Our Pilot project is to help Jimbe Primary School in Neno, Malawi to build classroom blocks for Year 7 and 8. The kids now have to finish their education with year 6, or they have to walk long distances to the nearest school.',
 };
 
 export const financialsData = {
@@ -100,11 +100,21 @@ export const events = [
 
 export const aboutData = {
   background:
-    'Founded in 2020 by a group of passionate educators and philanthropists, Lumi Education was born from a shared desire to make a tangible difference in the lives of children affected by poverty. Witnessing the lack of educational resources in rural Malawi, our founders were motivated to create an organization that could build infrastructure and provide sustainable support for local communities.',
+    'Lumi Education is run by UK based trustees along with an amazing team of Malawian volunteers who are passionate about making their country a better place and about educating and safeguarding children. Our trustee team is excited to make a positive impact in Malawi and using their varied skills to raise funds and plan an exciting school project, along with our team in Malawi.',
   motivations:
-    'Our motivation is simple: the belief that education is a fundamental human right and the most powerful tool for change. We are driven by the smiles of the children we help, the gratitude of the communities we serve, and the potential that is unlocked through learning. Every book we provide, every classroom we build, is a step towards a more equitable world.',
-  futurePlans:
-    'Looking ahead, Lumi Education aims to expand our reach. Our immediate goal is to add two new classrooms and a library to our existing school. In the next five years, we plan to replicate our model in a neighboring district, doubling our impact. We are also exploring vocational training programs for older students to equip them with practical skills for their future.',
+    'For many young women, school is the only safe place. We want to empower them to be able to learn and help raise a new generation of educated women and their children. We are driven by the potential that is unlocked through learning. Every book we provide, every classroom we build, is a step towards a more equitable world.',
+  futurePlans: [
+    'Fundraise and plan an environmentally friendly secondary school and nursery school with solar energy and sustainable water and waste management solutions in Neno District in Malawi.',
+    'Run a school farm that provides sustainable healthy meals for all school staff and students.',
+    'Organise busses for school transport.',
+    'Offer great quality free secondary school for teenage girls from families who cannot afford payed secondary education for their children.',
+    'Offer school spaces for teenage girls who are pregnant or have young babies or toddlers so they can continue with their education.',
+    'Provide good quality teacher accommodation at school so that the rural location of the school would not be a barrier for best teachers.',
+    'Link up the school with resources and teachers from all over the world through online learning resources and video lessons.',
+    'Work closely with the local community so the benefits of this project reach outside of the schools walls and make a lasting change in the area.',
+  ],
+  contributionHelp:
+    'The money we raise goes to different stages of creating Lumi school. At this point, we are fundraising to buy the land, register the school project with the Malawi government and start preparing the school farm, once the land is bought. Our next stage of fundraising will go towards the building of the school. As you can tell it is an exciting and big project so every donation will get us closer to making this a reality for teenage girls and babies in Malawi.',
   whatWeDo:
     'We believe education transforms lives. Lumi Education provides training, supports children and young people with disabilities, and works to break the cycle of poverty through opportunities to learn.',
   whoWeHelp:
