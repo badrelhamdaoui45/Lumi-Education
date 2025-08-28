@@ -19,7 +19,7 @@ export function TrusteesSection() {
               <CardContent className="flex flex-col items-center gap-4 pt-6">
                 <Avatar className="h-24 w-24">
                   <AvatarImage
-                    src={`https://picsum.photos/seed/${trustee.name.replace(/\s+/g, '')}/100`}
+                    src={trustee.image ?? `https://picsum.photos/seed/${trustee.name.replace(/\s+/g, '')}/100`}
                     data-ai-hint="professional headshot"
                   />
                   <AvatarFallback>
