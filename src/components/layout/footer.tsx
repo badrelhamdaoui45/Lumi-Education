@@ -45,8 +45,10 @@ export function Footer() {
             <p className="text-sm">
               Your donation can provide books, meals, and a safe place to learn for a child in need.
             </p>
-            <Button size="lg" className="w-full">
-              Donate Securely
+            <Button size="lg" className="w-full" asChild>
+              <a href="https://www.crowdfunder.co.uk/p/lumi-education" target="_blank" rel="noopener noreferrer">
+                Donate Securely
+              </a>
             </Button>
           </div>
         </div>

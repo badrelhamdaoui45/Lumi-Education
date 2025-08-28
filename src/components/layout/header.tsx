@@ -16,7 +16,9 @@ export function Header() {
           </Link>
         </nav>
         <Button asChild>
-          <a href="#donate">Donate Now</a>
+          <a href="https://www.crowdfunder.co.uk/p/lumi-education" target="_blank" rel="noopener noreferrer">
+            Donate Now
+          </a>
         </Button>
       </div>
     </header>
