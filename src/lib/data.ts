@@ -128,7 +128,7 @@ export const aboutData = {
 export const trustees = [
   { name: 'Teele Dunkley', role: 'Trustee', image: '/a2.png' },
   { name: 'Radek Vik', role: 'Trustee', image: '/a1.png' },
-  { name: 'Clanford Chirwa', role: 'Trustee' },
+  { name: 'Clanford Chirwa', role: 'Trustee', image: '/a3.png' },
   { name: 'Michaela Pavlovicova', role: 'Trustee' },
 ];
 
